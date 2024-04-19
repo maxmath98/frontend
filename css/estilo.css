@@ -2,14 +2,87 @@
 /* dark tema escuro */
 /* Abrir um comentário = Ctrl + Shift + A */
 
-:root, :root[data-theme='dark'] {
-    --primary-color: #f0f0f0; /* cor de texto */
-    --primary-bg-color: #111217; /* cor de fundo */
+/* Google Fonts - copiar - import para css  */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+:root, :root[data-theme='dark'] {
+    --primary-color: #f0f0f0; /* 2[cor de texto */
+    --secondary-bg-color: #d82424; /* cor de fundo */
+    --primary-bg-color: #111217; /* Bg= Background= Plano de fundo */
+
+    --secondary-bg-color: #28292E;
+    --primary-border-color:#28292E;
+    --secondary-border-color: #56575a
+
+    --title-color: #f0f0f0;
+    --text-color: #9a9a9c;
+    --link-color: #9a9a9c;
+    --icon-color: #c7c8c9;
 }
 
 :root [data-theme='light'] {
+
     --primary-color:#0b0b0f;
     --primary-bg-color: #e9e9e9;
+    --secondary-bg-color: #c7c8c9;
+    --primary-border-color: #c7c8c9;
+    --secondary-border-color: #9a9a9c;
 
+    --title-color: #0b0b0f;
+    --text-color: #28292e;
+    --link-color: #28292e;
+    --icon-color: #56575a;
+
+
+
+
+
+}
+
+/* definindo variaveis de cores para um tema claro e um para tema escuro */
+
+/* Root Refere-se ao elemento raiz do documento HTML */
+
+/* seletor :root define as variáveis globais */
+
+/* isso oferece uma maneira flexível de definir valores que podem ser reutilizados em todos o seu CSS e facilmente atualizados de um único lugar*/
+
+html[data-theme='light'].brand-logo{
+    filter:invert(1);
+}
+html [data-theme='light'].tecnologias-logo {
+    filter: invert(80%);
+}
+/*  reset do CSS */
+*{
+    margin: 10; /* margem */
+    padding: ; /* Prenchimento / espaçamento */
+    box-sizing: border-box;
+    vertical-align: baseline; 
+    /* list-style: none; */ /* Tira as bolinhas em frente ao textos(marcadores) */
+   /*  list-style: lower-roman; Muda pra romanos */
+   /* list-style: disc;  adicionar as bolinhas */
+   scrollbar-width: thin;
+   scrollbar-color: var(--secondary-bg-color); transparent;
+} 
+body{
+    background: var(--primary-bg-color);
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--text-color);
+}
+/* conteudo extra */
+
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+.header-toggle {
+    flex;
+    justify-content; flex-end;
 }
