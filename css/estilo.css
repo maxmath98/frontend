@@ -1,4 +1,3 @@
-
 /* dark tema escuro */
 /* Abrir um comentário = Ctrl + Shift + A */
 
@@ -7,18 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 :root, :root[data-theme='dark'] {
-    --primary-color: #f0f0f0; /* 2[cor de texto */
+    --primary-color: #f0f0f0; /* [cor de texto */
     --secondary-bg-color: #d82424; /* cor de fundo */
     --primary-bg-color: #111217; /* Bg= Background= Plano de fundo */
 
     --secondary-bg-color: #28292E;
     --primary-border-color:#28292E;
-    --secondary-border-color: #56575a
+    --secondary-border-color: #56575a;
 
     --title-color: #f0f0f0;
     --text-color: #9a9a9c;
     --link-color: #9a9a9c;
-    --icon-color: #c7c8c9;
+    --icon-color: #f0f0f0;
 }
 
 :root [data-theme='light'] {
@@ -32,11 +31,7 @@
     --title-color: #0b0b0f;
     --text-color: #28292e;
     --link-color: #28292e;
-    --icon-color: #56575a;
-
-
-
-
+    --icon-color: #d60707;
 
 }
 
@@ -56,33 +51,172 @@ html [data-theme='light'].tecnologias-logo {
 }
 /*  reset do CSS */
 *{
-    margin: 10; /* margem */
-    padding: ; /* Prenchimento / espaçamento */
+    margin: 0px; /* margem */
+    padding: 0px ; /* Prenchimento / espaçamento */
     box-sizing: border-box;
     vertical-align: baseline; 
-    /* list-style: none; */ /* Tira as bolinhas em frente ao textos(marcadores) */
+     list-style: none; /* Tira as bolinhas em frente ao textos(marcadores) */
    /*  list-style: lower-roman; Muda pra romanos */
    /* list-style: disc;  adicionar as bolinhas */
    scrollbar-width: thin;
-   scrollbar-color: var(--secondary-bg-color); transparent;
+   scrollbar-color: var(--secondary-bg-color) transparent;
 } 
 body{
     background: var(--primary-bg-color);
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     color:var(--text-color);
+
+    }
+
+a{
+    text-decoration:none ; /* ele tira o underline do "home"," contato" */
+    color: var(--primary-color);
 }
-/* conteudo extra */
+
+a:hover {
+color:var(--primary-color)
+}
+i{
+    color:var(--icon-color);
+}
+b{font-weight: 400;
+}
+
+h1{
+    
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+h3{
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4{
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1,h2,h3{
+    font-family: 'league spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color:var(--title-color);
+    font-weight: 200;
+
+}
+
+p,span,li {
+    font-size: 1rem;
+}
+
+p {
+    text-align: justify;
+}
+
 
 #header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* transforma seus filhos em flex itens */
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
     z-index: 2;
 }
 .header-toggle {
-    flex;
-    justify-content; flex-end;
+    display:  flex;
+    justify-content: flex-end;
 }
+.header-logo .logo {
+    width : 3.25rem;
+    height: 3.25rem;
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: ease-in-out .4s
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+    gap: 1rem;
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.menu-link{
+    display:flex;
+    align-items:center;
+    gap: .5rem; /* definir o espaço entre os elementos 
+    criar espaçamento uniforme entre os elementos */
+}
+
+.menu-mobile {
+    width:100vw ; /* VW = viewport width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid war(--primary-border-color);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column; /* Define a direção principal dos itens em uma coluna vertical */
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-textv { /* a:hover = peseudo-classe(passar o mouse por cima */
+    color:var(--primary-color);
+}
+
+.menu-icon, .menu-text{
+    color:var(--text-color);
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+}
+.menu-text{
+    font-size: .75rem;
+    text-transform: uppercase;/* letras maiúsculas */
+}
+.header-nav{ /* Menu desktop */
+    display: ; /* Depois pode colocar none */
+}
+.menu-principal {
+    gap:1rem;
+}
+.menu-social{
+    gap:1rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100px;
+    background: transparent;
+    border-radius: 3rem;
+    border:none;
+    padding: 0.875rem 1.5rem; /* Primeiro valor de cima baixo    Segundo valor da esquerda pra direita */
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
+
+}
+
+
