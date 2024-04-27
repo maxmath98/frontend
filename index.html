@@ -1,240 +1,55 @@
 <!DOCTYPE html>
+<!-- SHIFT + ALT + A para comentar-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Matheus Monteiro | Portfolio </title> 
-    <!-- tag titulo -->
+    <title>Hugo Andrade | Portfolio</title> <!-- tag titulo -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-<!-- google Fonts acima - copiar e colar o código -->
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- jsdelivr site onde pegamos o solzinho-->
-
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="
+    https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
+    " rel="stylesheet">
+    
 </head>
 <body>
-        
-    
     <header id="header"> <!-- cabeçalho -->
-        <nav class="header-nav">
-            <!-- Isso pode ser util quando voce deseja ocultar a navegação de um cabeçalho, por exemplo em certos dispositivos ou resolções de tela -->
+        <nav class="header-nav"> <!-- menu -->
             <ul class="menu menu-principal">
                 <li class="menu-item">
-                    <a href="#home"  class="menu-link active">
-                <span class="menu-text">  Home </span>
-                    </a>
-                    </li>
-                <li class="menu-item">
-                    <a href="#projetos" class="menu-link">
-                        <span class="menu-text"> Projeto </span>
+                    <a href="#home" class="menu-link active">
+                        <span class="menu-text"> Home </span> 
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#sobre" class="menu-link">  
-                        <span class="menu-text"> Sobre </span>
-                    </a> 
-                </li> 
+                    <a href="#projetos" class="menu-link"> 
+                       <span class="menu-text"> Projetos </span> 
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link"> 
+                        Sobre 
+                    </a>
+                </li>
                 <li class="menu-item">
                     <a href="#contato" class="menu-link"> 
-                        <span class="menu-text"> Contato </span> 
+                        Contato 
                     </a>
                 </li>
             </ul>
-        </nav> <!-- Fim menu -->
-
-    <div class="header-logo"> <!-- area do logo -->
-    <a href="#home">
-        <img src="img/logo.png" alt="" class="logo">
-    </a> 
-    <!-- Fim area do logo -->
-
-    </div> 
-    <div class="header-toggle"> 
-    <i id="toggleTheme" class="bi bi-sun"></i>
-    </div>
-
-</header>    
-<!-- Fim de cabeçalho  -- Shift + ALT + A -->
-
-
-<!-- Menu Mobile -->
-<nav class="nav mobile"> 
-    <ul class="menu menu-mobile">
-
-        <li class="menu-item">
-            <a class="menu-link active"  href="#home" >
-                <i class="menu-icon bi bi-houses-fill"> </i>
-                <span class="menu-text"> Home </span>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a class="menu-link "  href="#projetos" >
-                <i class="menu-icon bi bi-window-desktop"> </i>
-                <span class="menu-text"> Projetos </span>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a class="menu-link "  href="#sobre" >
-                <i class="menu-icon bi bi-person-workspace"> </i>
-                <span class="menu-text"> Sobre </span>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a class="menu-link "  href="#contato" >
-                <i class="menu-icon bi bi-envelope-fill"> </i>
-                <span class="menu-text"> Contato </span>
-            </a>
-        </li>
-
-    </ul>
-</nav>
- <!-- Fim menu mobile -->
-
-<main id="home">
-    <div class="main-content">
-
-        <h1>  <b> Soluções Criativas & </b> Desenvolvedor Front End.  </h1>
-        <p> Matheus Monteiro, São Paulo - SP, Desenvolvedor Front-End.   </p>
-
-        <ul class="menu menu-social">
-
-            <li>
-                <a class="menu link" href="https://github.com/maxmath98" target="_blank"> 
-                    <i class="menu-icon bi bi-github"> </i>
-                </a>
-            </li>
-
-           
-            <li>
-                <a class="menu link" href="https://www.linkedin.com/in/matheus-moraes-8387851a0/" target="_blank"> 
-                    <i class="menu-icon bi bi-linkedin"> </i>
-                </a>
-            </li>
+        </nav> <!-- fim menu -->
         
-            
-            <li>
-                <a class="menu link" href="https://www.instagram.com/maxmath98/" target="_blank"> 
-                    <i class="menu-icon bi bi-instagram"> </i>
-                </a>
-            </li>
-
-            
-            <li>
-                <a class="menu link" href="" target="_blank"> 
-                    <i class="menu-icon bi bi-gmail"> </i>
-                </a>
-            </li>
-
-        </ul>
-
-        <a href="#projetos">
-            <button class="btn btn-primary">
-                <span> Ver Projetos </span>
-                <i class="bi bi-arrow-down-right"> </i>
-            </button>
-        </a>
-
-    </div> <!-- Fim main content -->
-
-    <div class="video"> <!-- link do video que foi trazido do youtube -->
-        <iframe  src="https://www.youtube.com/embed/EAjWeHn01Z8" title="Eu sendo coração mole e o Google me entende" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</main>
-
-<section class="tecnologias">
-    <h2> Conhecimentos nas principais tecnologias do mercado. </h2>
-
-    <ul class="tecnologias-lista">
-        <li class="tecnologia-item">
-            <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
-        </li> <!-- Foto está local -->
-
-        <li class="tecnologia-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
-        </li>
-
-        <li class="tecnologia-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
-        </li>
-
-        <li class="tecnologia-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
-        </li>
-
-<!-- Tecnologias finalizado -->
-        
-    </ul>
+        <div class="header-logo"> <!-- area do logo -->
+            <a href="#home">
+                <img src="img/logo.png" alt=""class="logo">
+            </a> <!-- Fim area do logo -->
+        </div>  
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
+    </header> <!-- fim cabeçalho -->
     
-</section>
-
-<section id="projetos"  class="projetos">
-    <h2> Projetos </h2>
-    <div class="projeto-container">
-        <div class="projeto-card">
-            <img src="card cover" alt="img/projetos/josisbox.jpg" alt="livraria online">
-            <div class="card-body" >
-
-                <h3 class="card-title"> Josi's Box Ecommerce </h3>
-                <p> Ecommerce de Livros </p>
-                <ul class="card-lista"> 
-                    <li class="card-item">
-                        Listagem d favoritos;
-                    </li>
-                    <li class="card-item">
-                        Carrinho de compras;
-                    </li>
-                    <li class="card-item">
-                        Filtragem por Preço e Categoria;
-                    </li>
-                </ul>
-                    <li class="">
-
-                    </li>
-                <ul class="tecnologias-lista">
-
-                    <li class="tecnologia-item">
-                        <img src="" alt="">
-                    </li>
-
-                    <li class="tecnologia-item">
-                        <img src="" alt="">
-                    </li>
-
-                    <li class="tecnologia-item">
-                        <img src="" alt="">
-                    </li>
-                </ul>
-                
-            <div class="card-button">
-                <button class="btn btn-primary">
-                <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books" target="_blank"></a>
-                    <span> Prévia </span>
-                    <i class="bi bi-arrow-up-right"> </i>
-                </button>
-                <button class="btn">
-                    <a href="https://github.com/maxmath98/teste-josis/blob/main/README.md#teste-josis" target="_blank   ">
-                    <span> Repositório </span>
-                    </a>
-                </button>
-        </div> <!-- Fim projeto card -->
-
-
-    </div> 
-
-</section> <!-- Fim projetos -->
-
-
-
 </body>
 </html>
-
-
-
-
-
-<!-- Fim do mobile -->
