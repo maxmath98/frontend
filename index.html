@@ -1,55 +1,351 @@
+
 <!DOCTYPE html>
-<!-- SHIFT + ALT + A para comentar-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Andrade | Portfolio</title> <!-- tag titulo -->
+    <title> Gustavo Feriani | Portfolio </title>
+    
+    <!-- tag titulo -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link href="
-    https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
-    " rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
 </head>
 <body>
     <header id="header"> <!-- cabeçalho -->
-        <nav class="header-nav"> <!-- menu -->
+        <nav class="header-nav">
+        <!-- "header-nav" - Isso pode ser útil quando você deseja ocultar
+        a navegação de um cabeçalho, por exemplo, 
+        em certos dispositivos ou resoluções de tela. -->
             <ul class="menu menu-principal">
                 <li class="menu-item">
-                    <a href="#home" class="menu-link active">
-                        <span class="menu-text"> Home </span> 
+                   <a class="menu-link active" href="#home" > 
+                       <span class="menu-text"> Home </span> 
+                   </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#projetos">
+                       <span class="menu-text"> Projeto </span> 
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#projetos" class="menu-link"> 
-                       <span class="menu-text"> Projetos </span> 
+                    <a class="menu-link" href="#sobre">
+                       <span class="menu-text"> Sobre </span> 
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#sobre" class="menu-link"> 
-                        Sobre 
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#contato" class="menu-link"> 
-                        Contato 
+                    <a class="menu-link" href="#contato">
+                       <span class="menu-text"> Contato 
+                        
+                       </span> 
                     </a>
                 </li>
             </ul>
-        </nav> <!-- fim menu -->
+        </nav>
         
-        <div class="header-logo"> <!-- area do logo -->
+        <div class="header-logo">  <!-- area do logo -->
             <a href="#home">
-                <img src="img/logo.png" alt=""class="logo">
-            </a> <!-- Fim area do logo -->
-        </div>  
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+        </div><!-- Fim area do logo -->
+
         <div class="header-toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
-    </header> <!-- fim cabeçalho -->
-    
+
+    </header> 
+    <!-- fim cabeçalho -->
+    <!-- menu mobile -->
+    <nav class="nav-mobile">
+        <ul class="menu menu-mobile">
+            
+            <li class="menu-item">
+                <a class="menu-link active" href="#home">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#projetos">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#sobre">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link" href="#contato">
+                    <i class="menu-icon bi bi-envelope"> </i>
+                    <span class="menu-text"> Contato </span>
+                </a>
+            </li>
+        </ul>
+    </nav>    
+    <!-- Fim menu mobile -->
+
+    <main id="home">
+        <div class="main-content">
+
+            <h1> <b> Soluções Criativas & </b> Dev Front-End </h1>
+            <p> Gustavo Feriani, São Paulo - SP, Desenvolvedor e Instrutor 
+                Front-End. 
+            </p>
+            <ul class="menu menu-social">
+                
+                <li>
+                    <a class="menu-link" href="https://github.com/guuhferiani" target="_blank">
+                        <i class="menu-icon bi bi-github"> </i>    
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-link" href="" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"> </i>    
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-link" href="https://www.instagram.com/gustavo.feriani/" target="_blank">
+                        <i class="menu-icon bi bi-instagram"> </i>    
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-link" href="https://www.facebook.com/guhferiani" target="_blank">
+                        <i class="menu-icon bi bi-facebook"> </i>    
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span> Ver Projetos </span>
+                    <i class="bi bi-arrow-down-right"> </i>
+                </button>
+            </a>
+        </div>  <!-- Fim main-content -->
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/EAjWeHn01Z8" title="Eu sendo coração mole e o Google me entende" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <section class="tecnologias">
+        <h2> Conhecimento nas principais tecnologias do mercado. </h2>
+        
+        <ul class="tecnologias-lista">
+
+            <li class="tecnologia-item">
+                <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">       
+            </li>
+
+            <li class="tecnologia-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
+            </li>
+
+            <li class="tecnologia-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">       
+            </li>
+
+            <li class="tecnologia-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+            </li>
+        </ul>
+    </section> 
+
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto-container">
+
+            <div class="projeto-card">
+                <img class="card-cover" src="img/projetos/josisbox.jpg" alt="">
+                    
+                    <div class="card-body">
+
+                        <h3 class="card-title"> Josi's Box Ecommerce </h3>
+                        <p class="card-descricao"> Ecommerce de Livros </p>
+                        <ul class="card-lista">
+                            <li class="card-item">
+                                Listagem de Favoritos;
+                            </li>
+                            <li class="card-item">
+                                Carrinho de Comprar;
+                            </li>
+                            <li class="card-item">
+                                Filtragem por Preço e Categoria;
+                            </li>
+                        </ul>
+
+                        <ul class="tecnologias-lista"> 
+                            
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Angular.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="card-button">
+                            <button class="btn btn-primary">
+                                <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books"
+                                target="_blank">  
+                                    <span> Prévia </span>
+                                    <i class="bi bi-arrow-up-right"> </i>
+                                </a>
+                            </button>
+                            <button class="btn">
+                                <a href="https://github.com/guuhferiani/teste-josis" target="_blank"> 
+                                    <span> Repositório </span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>  <!-- card body -->
+            </div>  <!-- Fim projeto-card -->
+
+            <div class="projeto-card card-reverse">
+                <img class="card-cover" src="img/projetos/portfolio.PNG" alt="">
+                    
+                    <div class="card-body">
+
+                        <h3 class="card-title"> Portfolio Pessoal </h3>
+                        <p class="card-descricao"> A história por trás do meu Portfolio. </p>
+                        <ul class="card-lista">
+                            <li class="card-item">
+                                Postagens relacionadas em Destaque;
+                            </li>
+                            <li class="card-item">
+                                Seção dos Projetos;
+                            </li>
+                            <li class="card-item">
+                                Biografia do Autor;
+                            </li>
+                        </ul>
+
+                        <ul class="tecnologias-lista"> 
+                            
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="card-button">
+                            <button class="btn btn-primary">
+                                <a href="https://guuhferiani.github.io/frontend/"
+                                target="_blank">
+                                    <span> Prévia </span>
+                                    <i class="bi bi-arrow-up-right"> </i>
+                                </a>
+                            </button>
+                            <button class="btn">
+                                <a href="https://github.com/guuhferiani/frontend" target="_blank"> 
+                                    <span> Repositório </span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>  <!-- card body -->
+            </div>  <!-- Fim projeto-card card-reverse -->
+
+
+            <div class="projeto-card">
+                <img class="card-cover" 
+                src="img/projetos/games-store.jpg" alt="">
+                    
+                    <div class="card-body">
+
+                        <h3 class="card-title"> Games Store </h3>
+                        <p class="card-descricao"> Loja online de Games </p>
+                        <ul class="card-lista">
+                            <li class="card-item">
+                                Listagem de Favoritos;
+                            </li>
+                            <li class="card-item">
+                                Carrinho de Comprar;
+                            </li>
+                            <li class="card-item">
+                                Filtragem por Preço e Categoria;
+                            </li>
+                        </ul>
+
+                        <ul class="tecnologias-lista"> 
+                            
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Angular.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/TypeScript.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                            </li>
+
+                            <li class="tecnologia-item">
+                                <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="card-button">
+                            <button class="btn btn-primary">
+                                <a href="https://store.playstation.com/pt-br/pages/latest"
+                                target="_blank">  
+                                    <span> Prévia </span>
+                                    <i class="bi bi-arrow-up-right"> </i>
+                                </a>
+                            </button>
+                            <button class="btn">
+                                <a href="https://github.com/guuhferiani/teste-josis" target="_blank"> 
+                                    <span> Repositório </span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>  <!-- card body -->
+
+                    <a href="https://github.com/guuhferiani" target="_blank">
+                        <button class="btn btn-primary">
+                            <span> Ver Todos os Projetos </span>
+                            <i class="bi bi-arrow-up-right"> </i>
+                        </button>
+                    </a>
+
+
+            </div>  <!-- Fim projeto-card -->
+
+        </div> <!-- Fim projeto-container -->
+
+    </section> <!-- fim projetos -->
 </body>
 </html>
