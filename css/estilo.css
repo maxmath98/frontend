@@ -62,7 +62,7 @@ html [data-theme='light'] .tecnologias-logo {
    
 
    /* vertical-align: baseline; */
-   list-style: none;
+   list-style: none;  /* underline nos primeiros titulos  */
    scrollbar-width: thin;
    scrollbar-color: var(--secondary-bg-color) transparent;
 }
@@ -384,8 +384,8 @@ p {
     gap: 2rem;
 }
 .sobre-logo {
-    width: 15%;
-    height: 15%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     object-position: center;
     border-radius: 30rem;
@@ -584,7 +584,7 @@ footer{
         padding: 10rem 6rem 4rem;
     }
     .tecnologias h2{
-        font size: 3rem;
+        font-size: 3rem;
         width: 55%;
     }
     .tecnologias-lista{
