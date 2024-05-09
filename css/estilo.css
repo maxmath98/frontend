@@ -400,10 +400,10 @@ p {
 .sobre-icones{
     display: flex;
     align-items: center;
-    gap: 1.25;
+    gap: 1.25rem;
 }
 .sobre-icones i{
-    font-size: 1.25;
+    font-size: 1.25rem;
 }
 .sobre-content2 .col1,
 .sobre-content2 .col2{
@@ -412,15 +412,15 @@ p {
     text-align: justify;
     gap: 2rem;
 }
-.sobre-content2 .col1 .row1
-.sobre-content2 .col2 .row2{
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 .accordion-header{
     width: 100%;
-    display: header;
+    display: flex;
     padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
@@ -437,10 +437,10 @@ p {
     border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 .accordion-header.end,
-.accordion-item-active .accordion-body-end{
+.accordion-item.active .accordion-body.end{
     border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
-.accordion-item-active .accordion-item-end{
+.accordion-item-active .accordion-item.end{
     border-radius: 0;
 }
 .accordion-body{
@@ -448,18 +448,18 @@ p {
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: .625;
+    gap: .625rem;
     border: 1px solid var(--primary-border-color);
 }
-.accordion-item-active .accordion-header{
+.accordion-item.active .accordion-header{
     background: var(--secondary-bg-color);
 }
 
-.accordion-item-active .accordion-body{
+.accordion-item.active .accordion-body{
     display: flex ;
 }
-.accordion-item-active .hi-care-down-fill{
-    transform: rotate(100deg);
+.accordion-item.active .bi-caret-down-fill{
+    transform: rotate(180deg);
 }
 .contato{
     display: flex;
@@ -483,7 +483,7 @@ footer{
     margin-bottom:5rem;
 }
 footer p{
-    font-size: .875;
+    font-size: .875rem;
     text-align: center;
     padding: 1rem;
 }
@@ -614,7 +614,7 @@ footer{
         font-size: 4.5rem;
     }
     h3{
-        font-size: 3.25;
+        font-size: 3.25rem;
     }
     .header{
 
