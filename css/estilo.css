@@ -17,7 +17,7 @@
 
 }
 
-:root [data-theme='light'] {
+:root[data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
     --secondary-bg-color: #C7c8c9;
@@ -40,10 +40,10 @@ Isso oferece uma maneira flexível de definir valores
 que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um único lugar.
 */
 
-html [data-theme='light'] .brand-logo {
+html[data-theme='light'] .brand-logo {
     filter:invert(1);
 }
-html [data-theme='light'] .tecnologias-logo {
+html[data-theme='light'] .tecnologias-logo {
     filter: invert(80%);
 }
 /*  (*) reset do CSS */
